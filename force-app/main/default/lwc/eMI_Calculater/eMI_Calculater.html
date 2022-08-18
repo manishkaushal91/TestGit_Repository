@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="EMI Calculator" icon-name="utility:connected_apps">
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter Amount" onchange={changeHandler} name="AMT" value={Amount}></lightning-input>
+            <lightning-input type="text" label="Enter Tenure" onchange={changeHandler} name="TEN" value={Tenure}></lightning-input>
+            <lightning-input type="text" label="Enter ROI" onchange={changeHandler} name="Rate" value={ROI}></lightning-input>
+            <template if:true={isVisible}>
+                <lightning-input type="text" label="Interest" value={resInterest} name="Rate" onclick={Clear}></lightning-input>
+                <lightning-input type="text" label="Total Amount" value={resAmount} name="Rate" onclick={Clear}></lightning-input>
+            </template>
+        </div>
+
+
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-button variant="brand" label="Calculate"  onclick={Calci} class="slds-m-left_x-small" ></lightning-button>
+            <lightning-button variant="brand" label="Clear"  onclick={Clear} class="slds-m-left_x-small" ></lightning-button>
+        </div>
+
+        <!-- <div class="slds-p-around_medium lgc-bg">
+                {resInterest}
+                {resAmount}
+        </div> -->
+    </lightning-card> 
+</template>

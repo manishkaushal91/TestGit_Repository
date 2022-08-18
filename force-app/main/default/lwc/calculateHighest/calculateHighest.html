@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Calculate Highest Number">
+        <div class="slds-p-around_medium">
+            <lightning-input type="text" label="Enter first Number" onchange={firstNum} value={firstNumber}>
+            </lightning-input>
+            <lightning-input type="text" label="Enter Second Number" onchange={secondNum} value={secondNumber}>
+            </lightning-input>
+            <lightning-input type="text" label="Enter Third Number" onchange={ThirdNum} value={thirdNumber}>
+            </lightning-input>
+        </div>
+        <div>
+            <lightning-button variant="brand" label="Calcuate" title="Primary action" onclick={Calcuate}
+                class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="Clear" title="Primary action" onclick={Clear}
+                class="slds-m-left_x-small"></lightning-button>
+        </div>
+    </lightning-card>
+
+</template>

@@ -1,0 +1,30 @@
+<template>
+
+    <lightning-card title="Lightning-Record-Edit-Form for Contact">
+    <lightning-record-edit-form record-id={recordId} object-api-name="Contact">
+        <lightning-input-field field-name="LastName"></lightning-input-field>
+        <lightning-input-field field-name="FirstName"></lightning-input-field>
+        <lightning-input-field field-name="Email"></lightning-input-field>
+        <lightning-input-field field-name="AccountId"></lightning-input-field>
+
+        <lightning-button label="Reset" onclick={resetCon}></lightning-button>
+    </lightning-record-edit-form>     
+    </lightning-card>
+
+
+    <lightning-card title="Lightning-Record-Edit-Form for Account Creation">
+        <lightning-record-edit-form object-api-name="Account">
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field field-name="Rating"></lightning-input-field>
+            <lightning-input-field field-name="Phone"></lightning-input-field>
+            <lightning-input-field field-name="Type"></lightning-input-field>
+            <lightning-input-field field-name="Industry"></lightning-input-field>
+    
+    
+            <lightning-button label="Create" type = "submit"></lightning-button>
+        </lightning-record-edit-form>     
+        </lightning-card>
+    
+
+
+</template>

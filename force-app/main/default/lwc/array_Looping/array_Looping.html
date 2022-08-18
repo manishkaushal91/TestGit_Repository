@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Loop and array with For-each  ">
+        <div class="slds-m-around_medium">
+                <template for:each={carList} for:item='a'>   
+                    <p key={a}> {a}</p>
+                </template>
+        </div>  
+    </lightning-card>
+
+    <lightning-card title="Loop and array with Iterator">
+        <div class="slds-m-around_medium">
+                <template iterator:item={carList}>   
+                    <p key={item.value}>{item.value}</p>
+                </template>
+        </div>  
+    </lightning-card>
+
+</template>

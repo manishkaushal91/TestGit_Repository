@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Calculate Greatest Number">
+
+        <div class="slds-p-around_medium">
+            <lightning-input type="text" label="Enter the First Number" onchange={handleClick} name="fn" value={fNumber}>
+            </lightning-input>
+            <lightning-input type="text" label="Enter the Second Number" onchange={handleClick} name="Sn" value={SNumber}>
+            </lightning-input>
+            <lightning-input type="text" label="Enter the Third Number" onchange={handleClick} name="Tn" value={TNumber}>
+            </lightning-input>
+        </div>
+
+        <div>
+            <lightning-button variant="brand" label="Submit"  onclick={Calculate} class="slds-m-left_x-small"></lightning-button>
+            <lightning-button variant="brand" label="Clear"  onclick={Clear} class="slds-m-left_x-small"></lightning-button>
+        </div>
+
+    </lightning-card>
+</template>

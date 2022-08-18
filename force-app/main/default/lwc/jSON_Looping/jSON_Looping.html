@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="Passing array with for:each">
+        <div class="slds-m-around_small">
+            <template for:each={rollNumber} for:item='Number'>
+                <p key={n}> {Number} </p>
+            </template>
+        </div>
+    </lightning-card>
+    =============================************************************=============================
+    <lightning-card title="Passing array with iterator">
+        <div class="slds-m-around_small">
+            <template iterator:item={rollNumber}>
+                <p key={item.value}> {item.value} </p>
+            </template>
+        </div>
+    </lightning-card>
+    
+    =============================************************************=============================
+    <lightning-card>
+        <div class="slds-m-around_small">
+            <b>Student name : </b>  {StudentDetail.name} <p></p>
+            <b>Student age : </b> {StudentDetail.age} <p></p>
+            <b>Student College : </b> {StudentDetail.College} <p></p>
+            <b>Student Address : </b> {StudentDetail.Address} <p></p>
+            <b>Student City : </b> {StudentDetail.City} <p></p>
+        </div>
+    </lightning-card>
+    
+    
+    
+    <lightning-card title="Array Looping">
+        <div class="slds-m-around_small">
+            <template iterator:item ={CollegeDetail}>
+                <div key={item.value.pincode}> 
+                    <ul class = "slds-m-around_xx-small">
+                        <li class="slds- item">
+                            <strong>{item.value.name}</strong> <p></p>
+                            {item.value.Place}  <p></p>
+                            {item.value.Course} <p></p>
+                            {item.value.Branch} <p></p>
+                            {item.value.pincode} <p></p>
+                            <br>
+                        </li>
+                    </ul>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

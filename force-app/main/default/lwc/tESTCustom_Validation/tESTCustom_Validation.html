@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Custom Validation">
+        <lightning-record-edit-form object-api-name="Account" onsubmit={submitHandler}>
+            <div class="slds-m-around_medium">
+                <lightning-input class="name" type="text" label="Account Name"></lightning-input>
+                <lightning-input class="industry" type="text" label="Account Industry"></lightning-input>
+                <!-- <lightning-input class="revenue" type="number" label="Annual Revenue"  formatter="currency" step="0.01"></lightning-input> -->
+                <br>
+                <lightning-button variant="brand" label="Save" type="submit"></lightning-button>
+                <lightning-button class="slds-m-left_small" variant="brand" label="Cancel" type="reset"></lightning-button>
+            </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

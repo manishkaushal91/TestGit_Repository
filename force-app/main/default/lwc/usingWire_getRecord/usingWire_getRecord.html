@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Data Table With Wire">
+        
+            <lightning-datatable key-field="Id" 
+                                 data={contact.data}
+                                 columns={colTable}
+                                 onsave={handleSave}
+                                 draft-values={draftValues}>
+            </lightning-datatable>
+    
+        
+    </lightning-card>
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <lightning-card label="Imperative Create Record">
+        <lightning-input type="text" label="Account Name" onchange={AccountName}></lightning-input>
+        <lightning-input type="text" label="Account Phone" onchange={AccountPhone}></lightning-input>
+        <lightning-input type="text" label="Account Fax" onchange={AccountFax}></lightning-input>
+        <lightning-input type="text" label="Account Rating" onchange={AccountRating}></lightning-input>
+        <lightning-input type="text" label="Account Industry" onchange={AccountIndustry}></lightning-input>
+
+        <lightning-button label="Savee" onclick={SaveButton}></lightning-button> 
+        <lightning-button label="Delete" variant="destructive" onclick={deleteHandler}></lightning-button> 
+        <lightning-button label="Update" variant="success" onclick={updateHandler}></lightning-button> 
+    </lightning-card>
+</template>

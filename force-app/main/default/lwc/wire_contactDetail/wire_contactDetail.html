@@ -1,3 +1,4 @@
+
 <template>
     <lightning-card title="Search Contact">
         <lightning-input label="Enter the search Contact" type="Search" value={searchkey} onchange={handleChange}></lightning-input>
@@ -9,7 +10,7 @@
             onsave={handleSave}
            draft-values={draftValues}></lightning-datatable>
         </template>
-        
+
         <template if:true={contact.error}>
             Contact cannot be displayed.Please contact System Admin
         </template>
